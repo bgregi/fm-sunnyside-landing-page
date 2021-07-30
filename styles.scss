@@ -45,8 +45,12 @@ $white: hsl(0, 0%, 100%);
     src: url(fonts/Barlow-SemiBold.ttf);
 }
 @font-face {
-    font-family: Fraunces;
+    font-family: Fraunces Variable;
     src: url(fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+@font-face {
+    font-family: Fraunces Bold;
+    src: url(fonts/Fraunces_72pt_Soft-Black.ttf);
 }
 
 html {
@@ -65,8 +69,114 @@ img {
 }
 
 .orange {
+    width: 100vw;
     background-image: url(images/mobile/image-header.jpg);
     background-size: 100%;
-    height: 600px;
+    background-repeat: no-repeat;
+    height: 140vw;
+    padding: 35px 25px 0;
+    box-sizing: border-box;
+
+    .top-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        #sunnyside-logo {
+            width: 35%;
+        }
+
+        #menu-img {
+            width: 7%;
+        }
+    }
+
+    .menu {
+        display: none;
+    }
+
+    h1 {
+        font-family: Fraunces Bold, serif;
+        color: $white;
+        font-weight: 900;
+        font-size: 11vw;
+        text-transform: uppercase;
+        padding: 50px 0 28px;
+        letter-spacing: 8px;
+    }
+
+    #arrow-down {
+        width: 35px;
+    }
 }
 
+.transform {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    #egg {
+        width: 100vw;
+    }
+
+}
+
+h2 {
+    font-family: Fraunces Bold, serif;
+    color: $vdd-blue;
+    font-size: 8.5vw;
+    margin: 0;
+    padding: 50px 15% 30px;
+
+}
+
+p {
+    margin: 0;
+    padding: 0 7%;
+    font-size: 4.8vw;
+    color: $g-blue;
+    line-height: 7.6vw;
+}
+
+h3 {
+    font-family: Fraunces Bold, serif;
+    color: $vdd-blue;
+    text-transform: uppercase;
+    font-size: 4.3vw;
+    letter-spacing: .2vw;
+    margin: 40px 40px 60px;
+
+
+
+}
+
+.underline {
+    height: 2.5vw;
+    opacity: .3;
+    width: 35vw;
+    position: relative;
+    bottom: 2vw;
+    border: $yellow solid 1px;
+    border-radius: 1.25vw;
+    z-index: -1;
+    
+    &.yellow {
+        background-color: $yellow;
+
+    }
+
+    &.red {
+        background-color: $sf-red;
+    }
+}
+
+.stand-out {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.graphic-design {
+    background-image: url(images/mobile/image-graphic-design.jpg);
+}

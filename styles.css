@@ -3,8 +3,12 @@
   src: url(fonts/Barlow-SemiBold.ttf);
 }
 @font-face {
-  font-family: Fraunces;
+  font-family: Fraunces Variable;
   src: url(fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+@font-face {
+  font-family: Fraunces Bold;
+  src: url(fonts/Fraunces_72pt_Soft-Black.ttf);
 }
 html {
   width: 100vw;
@@ -22,9 +26,101 @@ img {
 }
 
 .orange {
+  width: 100vw;
   background-image: url(images/mobile/image-header.jpg);
   background-size: 100%;
-  height: 600px;
+  background-repeat: no-repeat;
+  height: 140vw;
+  padding: 35px 25px 0;
+  box-sizing: border-box;
+}
+.orange .top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.orange .top-header #sunnyside-logo {
+  width: 35%;
+}
+.orange .top-header #menu-img {
+  width: 7%;
+}
+.orange .menu {
+  display: none;
+}
+.orange h1 {
+  font-family: Fraunces Bold, serif;
+  color: white;
+  font-weight: 900;
+  font-size: 11vw;
+  text-transform: uppercase;
+  padding: 50px 0 28px;
+  letter-spacing: 8px;
+}
+.orange #arrow-down {
+  width: 35px;
+}
+
+.transform {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.transform #egg {
+  width: 100vw;
+}
+
+h2 {
+  font-family: Fraunces Bold, serif;
+  color: #23303e;
+  font-size: 8.5vw;
+  margin: 0;
+  padding: 50px 15% 30px;
+}
+
+p {
+  margin: 0;
+  padding: 0 7%;
+  font-size: 4.8vw;
+  color: #a7abae;
+  line-height: 7.6vw;
+}
+
+h3 {
+  font-family: Fraunces Bold, serif;
+  color: #23303e;
+  text-transform: uppercase;
+  font-size: 4.3vw;
+  letter-spacing: 0.2vw;
+  margin: 40px 40px 60px;
+}
+
+.underline {
+  height: 2.5vw;
+  opacity: 0.3;
+  width: 35vw;
+  position: relative;
+  bottom: 2vw;
+  border: #fad400 solid 1px;
+  border-radius: 1.25vw;
+  z-index: -1;
+}
+.underline.yellow {
+  background-color: #fad400;
+}
+.underline.red {
+  background-color: #fe7867;
+}
+
+.stand-out {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.graphic-design {
+  background-image: url(images/mobile/image-graphic-design.jpg);
 }
 
 /*# sourceMappingURL=styles.css.map */
