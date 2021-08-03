@@ -92,8 +92,30 @@ img {
         }
     }
 
-    .menu {
-        display: none;
+    .menu-div{
+        position: absolute;
+        left: 50%;
+        .menu {
+            position: relative;
+            left: -50%;
+            display: flex;
+            flex-direction: column;
+            background-color: $white;
+            margin: 15vw 0;
+            width: 75vw;
+            padding: 25px;
+
+            p {
+                margin: 4vw;
+            }
+        }
+    }
+
+    .menu:after {
+        width: 0;
+        height: 20px;
+        border-bottom: 100px solid red;
+        border-left: 100px solid transparent;
     }
 
     h1 {
@@ -302,6 +324,8 @@ footer {
         }
     }
 }
+
+
 
 .attribution {
     background-color: hsl(167, 40%, 70%);
