@@ -91,7 +91,7 @@ h3 {
   font-family: Fraunces Bold, serif;
   color: #23303e;
   text-transform: uppercase;
-  font-size: 4.3vw;
+  font-size: 4vw;
   letter-spacing: 0.2vw;
   margin: 40px 40px 60px;
 }
@@ -99,7 +99,7 @@ h3 {
 .underline {
   height: 2.5vw;
   opacity: 0.3;
-  width: 35vw;
+  width: 33vw;
   position: relative;
   bottom: 2vw;
   border: #fad400 solid 1px;
@@ -155,12 +155,90 @@ h4 {
   color: #a7abae;
   font-size: 4.1vw;
   letter-spacing: 1vw;
-  margin: 16vw 0;
+  margin: 16vw 0 0;
 }
 
 .profile-img {
   width: 70px;
   border-radius: 35px;
+  margin-top: 16vw;
+}
+
+h5 {
+  font-family: Fraunces Bold, serif;
+  font-size: 5vw;
+  color: #23303e;
+  margin-bottom: 0;
+}
+
+.testimonials p {
+  margin: 30px 0 0 0;
+  line-height: 8vw;
+  color: #5a636c;
+}
+.testimonials .profession {
+  font-size: 4vw;
+  color: #a7abae;
+  margin-top: 5px;
+}
+
+.four-imgs {
+  margin: 100px 0 0;
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+  grid-template-rows: 50vw 50vw;
+}
+.four-imgs #milk {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.four-imgs #orange {
+  grid-column: 2/3;
+  grid-area: 1/2;
+}
+.four-imgs #cone {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.four-imgs #sugar {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.four-imgs img {
+  width: 50vw;
+}
+
+footer {
+  background-color: #94d1c4;
+}
+footer #green-logo {
+  width: 45vw;
+  margin: 50px 0;
+}
+footer .about {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5vw 0;
+}
+footer .about p {
+  color: #458c7e;
+}
+footer .socials {
+  padding: 80px 30vw;
+  display: flex;
+  justify-content: space-between;
+}
+footer .socials img {
+  width: 5vw;
+}
+
+.attribution {
+  background-color: #94d1c4;
+  color: #458c7e;
+  padding-bottom: 30px;
+}
+.attribution a {
+  color: #2C7566;
 }
 
 /*# sourceMappingURL=styles.css.map */

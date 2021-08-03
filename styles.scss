@@ -144,7 +144,7 @@ h3 {
     font-family: Fraunces Bold, serif;
     color: $vdd-blue;
     text-transform: uppercase;
-    font-size: 4.3vw;
+    font-size: 4.0vw;
     letter-spacing: .2vw;
     margin: 40px 40px 60px;
 
@@ -155,7 +155,7 @@ h3 {
 .underline {
     height: 2.5vw;
     opacity: .3;
-    width: 35vw;
+    width: 33vw;
     position: relative;
     bottom: 2vw;
     border: $yellow solid 1px;
@@ -216,10 +216,99 @@ h4 {
     color: $g-blue;
     font-size: 4.1vw;
     letter-spacing: 1vw;
-    margin: 16vw 0;
+    margin: 16vw 0 0;
 }
 
 .profile-img {
     width: 70px;
     border-radius: 35px;
+    margin-top: 16vw;
+}
+
+h5 {
+    font-family: Fraunces Bold, serif;
+    font-size: 5vw;
+    color: $vdd-blue;
+    margin-bottom: 0;
+}
+
+.testimonials {
+    p {
+        margin: 30px 0 0 0;
+        line-height: 8vw;
+        color: $vdg-blue;
+    }
+
+    .profession {
+        font-size: 4vw;
+        color: $g-blue;
+        margin-top: 5px;
+    }
+}
+
+.four-imgs {
+    margin: 100px 0 0;
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 50vw 50vw;
+
+    #milk {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    #orange {
+        grid-column: 2 / 3;
+        grid-area: 1 / 2;
+    }
+    #cone {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    #sugar {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    img {
+        width: 50vw;
+    }
+}
+
+footer {
+    background-color: hsl(167, 40%, 70%);
+
+    #green-logo {
+        width: 45vw;
+        margin: 50px 0;
+    }
+
+    .about {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 5vw 0;
+
+        p {
+            color: $dm-cyan;
+        }
+    }
+
+    .socials {
+        padding: 80px 30vw;
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            width: 5vw;
+        }
+    }
+}
+
+.attribution {
+    background-color: hsl(167, 40%, 70%);
+    color: $dm-cyan;
+    padding-bottom: 30px;
+
+    a {
+        color: #2C7566;
+    }
 }
