@@ -282,4 +282,62 @@ footer .socials img {
   color: #2c7566;
 }
 
+@media only screen and (min-width: 769px) {
+  .orange {
+    width: 100vw;
+    background-image: url(images/desktop/image-header.jpg);
+    padding: 40px;
+    height: 55.5vw;
+  }
+  .orange .desktop-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .orange .desktop-header .top-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .orange .desktop-header .top-header #sunnyside-logo {
+    width: 180px;
+  }
+  .orange .desktop-header .top-header #menu-img {
+    display: none;
+  }
+  .orange .desktop-header .menu-div {
+    position: initial;
+    width: initial;
+  }
+  .orange .desktop-header .menu-div .menu {
+    position: inherit;
+    background-color: initial;
+    display: flex;
+    flex-direction: row;
+    width: initial;
+    padding: 0;
+  }
+  .orange .desktop-header .menu-div .menu p {
+    font-size: 16px;
+    color: white;
+    margin: 10px;
+    padding: 0 13px;
+    line-height: 30px;
+  }
+  .orange .desktop-header .menu-div .menu .contact {
+    font-size: 16px;
+    padding: 18px 10px;
+    margin: 10px;
+    width: 130px;
+    background-color: white;
+    border-radius: 28px;
+  }
+  .orange h1 {
+    font-size: 50px;
+    margin-bottom: 5vw;
+  }
+
+  .menu:after {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */

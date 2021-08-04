@@ -1,14 +1,16 @@
 let menuDiv = document.getElementById("menu-div")
 
 function toggleMenuDiv() {
-    if (menuDiv.style.display == "block" || !menuDiv.style.display) {
-        menuDiv.style.display = "none"
+    if (window.screen.width < 800) {
+        if (menuDiv.style.display == "block" || !menuDiv.style.display) {
+            menuDiv.style.display = "none"
 
-        console.log("primeira condição")
-    } else {
-        menuDiv.style.display = "block"
+            console.log("primeira condição")
+        } else {
+            menuDiv.style.display = "block"
 
-        console.log("segunda condição")
+            console.log("segunda condição")
+        }
     }
 }
 
