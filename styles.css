@@ -48,25 +48,44 @@ img {
 .orange .menu-div {
   position: absolute;
   left: 50%;
+  width: 50vw;
+  display: block;
 }
 .orange .menu-div .menu {
   position: relative;
-  left: -50%;
+  left: -42.5vw;
+  top: 15vw;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   background-color: white;
-  margin: 15vw 0;
-  width: 75vw;
-  padding: 25px;
+  width: 85vw;
+  padding: 5vw 0;
 }
 .orange .menu-div .menu p {
   margin: 4vw;
 }
+.orange .menu-div .menu .contact {
+  margin: 4vw;
+  background-color: #fad400;
+  font-family: Fraunces Bold, serif;
+  font-size: 4vw;
+  text-transform: uppercase;
+  color: black;
+  padding: 5vw;
+  width: 30vw;
+  border-radius: 7.5vw;
+}
 .orange .menu:after {
+  content: "";
   width: 0;
-  height: 20px;
-  border-bottom: 100px solid red;
-  border-left: 100px solid transparent;
+  height: 0;
+  border-bottom: 12vw solid white;
+  border-left: 12vw solid transparent;
+  position: absolute;
+  bottom: 75vw;
+  left: 73vw;
 }
 .orange h1 {
   font-family: Fraunces Bold, serif;
@@ -144,7 +163,8 @@ h3 {
   background-size: 100%;
   height: 160vw;
 }
-.graphic-design h2, .graphic-design p {
+.graphic-design h2,
+.graphic-design p {
   color: #25564b;
 }
 
@@ -165,7 +185,8 @@ h3 {
   background-size: 100%;
   height: 160vw;
 }
-.photography h2, .photography p {
+.photography h2,
+.photography p {
   color: #19536b;
 }
 
@@ -258,7 +279,7 @@ footer .socials img {
   padding-bottom: 30px;
 }
 .attribution a {
-  color: #2C7566;
+  color: #2c7566;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,36 +1,36 @@
 // ## Colors
 // ### Primary
 
-// - Soft red: 
+// - Soft red:
 $sf-red: hsl(7, 99%, 70%);
 
-// - Yellow: 
+// - Yellow:
 $yellow: hsl(51, 100%, 49%);
 
-// - Dark desaturated cyan (graphic design text): 
+// - Dark desaturated cyan (graphic design text):
 $dd-cyan: hsl(167, 40%, 24%);
 
 // - Dark blue (photography text):
 $d-blue: hsl(198, 62%, 26%);
 
-// - Dark moderate cyan (footer): 
+// - Dark moderate cyan (footer):
 $dm-cyan: hsl(168, 34%, 41%);
 
 // ### Neutral
 
-// - Very dark desaturated blue: 
+// - Very dark desaturated blue:
 $vdd-blue: hsl(212, 27%, 19%);
 
-// - Very dark grayish blue: 
+// - Very dark grayish blue:
 $vdg-blue: hsl(213, 9%, 39%);
 
-// - Dark grayish blue: 
+// - Dark grayish blue:
 $dg-blue: hsl(232, 10%, 55%);
 
-// - Grayish blue: 
+// - Grayish blue:
 $g-blue: hsl(210, 4%, 67%);
 
-// - White: 
+// - White:
 $white: hsl(0, 0%, 100%);
 
 // ## Fonts
@@ -92,30 +92,53 @@ img {
         }
     }
 
-    .menu-div{
+    .menu-div {
         position: absolute;
         left: 50%;
+        width: 50vw;
+        display: block;
+
+
         .menu {
             position: relative;
-            left: -50%;
+            left: -42.5vw;
+            top: 15vw;
             display: flex;
             flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
             background-color: $white;
-            margin: 15vw 0;
-            width: 75vw;
-            padding: 25px;
-
+            width: 85vw;
+            padding: 5vw 0;
+            
             p {
                 margin: 4vw;
+            }
+
+            .contact {
+                margin: 4vw;
+                background-color: $yellow;
+                font-family: Fraunces Bold, serif;
+                font-size: 4vw;
+                text-transform: uppercase;
+                color: black;
+                padding: 5vw;
+                width: 30vw;
+                border-radius: 7.5vw;
+
             }
         }
     }
 
     .menu:after {
+        content: "";
         width: 0;
-        height: 20px;
-        border-bottom: 100px solid red;
-        border-left: 100px solid transparent;
+        height: 0;
+        border-bottom: 12vw solid white;
+        border-left: 12vw solid transparent;
+        position: absolute;
+        bottom: 75vw;
+        left: 73vw;
     }
 
     h1 {
@@ -142,7 +165,6 @@ img {
     #egg {
         width: 100vw;
     }
-
 }
 
 h2 {
@@ -151,7 +173,6 @@ h2 {
     font-size: 8.5vw;
     margin: 0;
     padding: 50px 15% 30px;
-
 }
 
 p {
@@ -166,27 +187,23 @@ h3 {
     font-family: Fraunces Bold, serif;
     color: $vdd-blue;
     text-transform: uppercase;
-    font-size: 4.0vw;
-    letter-spacing: .2vw;
+    font-size: 4vw;
+    letter-spacing: 0.2vw;
     margin: 40px 40px 60px;
-
-
-
 }
 
 .underline {
     height: 2.5vw;
-    opacity: .3;
+    opacity: 0.3;
     width: 33vw;
     position: relative;
     bottom: 2vw;
     border: $yellow solid 1px;
     border-radius: 1.25vw;
     z-index: -1;
-    
+
     &.yellow {
         background-color: $yellow;
-
     }
 
     &.red {
@@ -205,7 +222,8 @@ h3 {
     background-size: 100%;
     height: 160vw;
 
-    h2, p {
+    h2,
+    p {
         color: $dd-cyan;
     }
 }
@@ -227,7 +245,8 @@ h3 {
     background-size: 100%;
     height: 160vw;
 
-    h2, p {
+    h2,
+    p {
         color: $d-blue;
     }
 }
@@ -325,14 +344,12 @@ footer {
     }
 }
 
-
-
 .attribution {
     background-color: hsl(167, 40%, 70%);
     color: $dm-cyan;
     padding-bottom: 30px;
 
     a {
-        color: #2C7566;
+        color: #2c7566;
     }
 }
