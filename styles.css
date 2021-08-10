@@ -338,6 +338,76 @@ footer .socials img {
   .menu:after {
     display: none;
   }
+
+  .transform {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .transform .transform-text {
+    box-sizing: border-box;
+    width: 50vw;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: left;
+    padding: 70px 150px 100px 200px;
+  }
+  .transform .transform-text h2 {
+    padding-right: 20px;
+  }
+  .transform #egg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 50vw;
+  }
+
+  .stand-out {
+    display: grid;
+  }
+  .stand-out #stand-out {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 50vw;
+  }
+  .stand-out .stand-out-text {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .graphic-design {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  .photography {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
+  h2 {
+    font-size: 50px;
+    padding: 0;
+  }
+
+  p {
+    font-size: 22px;
+    line-height: 38px;
+    padding: 30px 0 0 0;
+  }
+
+  h3 {
+    font-size: 19px;
+    letter-spacing: 2px;
+    margin: 50px 0 0 10px;
+  }
+
+  .underline {
+    height: 8px;
+    width: 150px;
+    bottom: 8px;
+    right: 7px;
+    border: #fad400 solid 1px;
+    border-radius: 4px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
