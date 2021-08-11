@@ -12,6 +12,7 @@
 }
 html {
   width: 100vw;
+  overflow-x: hidden;
 }
 
 body {
@@ -135,6 +136,12 @@ h3 {
   margin: 40px 40px 60px;
 }
 
+.underline-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
 .underline {
   height: 2.5vw;
   opacity: 0.3;
@@ -229,19 +236,25 @@ h5 {
   grid-template-columns: 50vw 50vw;
   grid-template-rows: 50vw 50vw;
 }
-.four-imgs #milk {
+.four-imgs #milk-desktop,
+.four-imgs #orange-desktop,
+.four-imgs #cone-desktop,
+.four-imgs #sugar-desktop {
+  display: none;
+}
+.four-imgs #milk-mobile {
   grid-column: 1/2;
   grid-row: 1/2;
 }
-.four-imgs #orange {
+.four-imgs #orange-mobile {
   grid-column: 2/3;
   grid-area: 1/2;
 }
-.four-imgs #cone {
+.four-imgs #cone-mobile {
   grid-column: 1/2;
   grid-row: 2/3;
 }
-.four-imgs #sugar {
+.four-imgs #sugar-mobile {
   grid-column: 2/3;
   grid-row: 2/3;
 }
@@ -282,12 +295,13 @@ footer .socials img {
   color: #2c7566;
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1000px) {
   .orange {
     width: 100vw;
     background-image: url(images/desktop/image-header.jpg);
-    padding: 40px;
+    padding: 2.5vw;
     height: 55.5vw;
+    box-sizing: border-box;
   }
   .orange .desktop-header {
     display: flex;
@@ -298,7 +312,7 @@ footer .socials img {
     justify-content: space-between;
   }
   .orange .desktop-header .top-header #sunnyside-logo {
-    width: 180px;
+    width: 13vw;
   }
   .orange .desktop-header .top-header #menu-img {
     display: none;
@@ -316,27 +330,32 @@ footer .socials img {
     padding: 0;
   }
   .orange .desktop-header .menu-div .menu p {
-    font-size: 16px;
+    font-size: 1.5vw;
     color: white;
     margin: 10px;
     padding: 0 13px;
     line-height: 30px;
   }
   .orange .desktop-header .menu-div .menu .contact {
-    font-size: 16px;
-    padding: 18px 10px;
+    font-size: 1.1vw;
+    padding: 1.2vw 0.8vw;
     margin: 10px;
-    width: 130px;
+    width: 8vw;
     background-color: white;
     border-radius: 28px;
   }
   .orange h1 {
-    font-size: 50px;
+    font-size: 4vw;
     margin-bottom: 5vw;
   }
 
   .menu:after {
     display: none;
+  }
+
+  h2 {
+    font-size: 3vw;
+    padding: 0;
   }
 
   .transform {
@@ -346,52 +365,70 @@ footer .socials img {
   .transform .transform-text {
     box-sizing: border-box;
     width: 50vw;
-    grid-column: 1/2;
-    grid-row: 1/2;
     text-align: left;
-    padding: 70px 150px 100px 200px;
+    padding: 10vw 5.5vw 5vw 10vw;
   }
   .transform .transform-text h2 {
     padding-right: 20px;
   }
+  .transform .transform-text p {
+    font-size: 22px;
+    line-height: 38px;
+    padding: 30px 0 0 0;
+  }
   .transform #egg {
-    grid-column: 2/3;
-    grid-row: 1/2;
     width: 50vw;
   }
 
   .stand-out {
-    display: grid;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
   }
   .stand-out #stand-out {
-    grid-column: 1/2;
-    grid-row: 2/3;
     width: 50vw;
   }
   .stand-out .stand-out-text {
-    grid-column: 2/3;
-    grid-row: 2/3;
-  }
-
-  .graphic-design {
+    box-sizing: border-box;
+    width: 50vw;
     grid-column: 1/2;
-    grid-row: 3/4;
+    grid-row: 1/2;
+    text-align: left;
+    padding: 10vw 5.5vw 5vw 10vw;
   }
-
-  .photography {
-    grid-column: 2/3;
-    grid-row: 3/4;
-  }
-
-  h2 {
-    font-size: 50px;
-    padding: 0;
-  }
-
-  p {
+  .stand-out .stand-out-text p {
     font-size: 22px;
     line-height: 38px;
     padding: 30px 0 0 0;
+  }
+
+  .fruits {
+    display: flex;
+  }
+  .fruits .graphic-design {
+    overflow: hidden;
+    width: 50vw;
+    height: inherit;
+    background-image: url(images/desktop/image-graphic-design.jpg);
+    background-size: 50vw;
+    background-repeat: no-repeat;
+  }
+  .fruits .photography {
+    overflow: hidden;
+    width: 50vw;
+    height: inherit;
+    background-image: url(images/desktop/image-photography.jpg);
+    background-size: 50vw;
+    background-repeat: no-repeat;
+  }
+  .fruits .smaller-h2 {
+    font-size: 37px;
+    padding: 27vw 0 0 0;
+  }
+  .fruits p {
+    font-size: 20px;
+    line-height: 33px;
+    padding: 2vw 13vw;
   }
 
   h3 {
@@ -407,6 +444,83 @@ footer .socials img {
     right: 7px;
     border: #fad400 solid 1px;
     border-radius: 4px;
+  }
+
+  h4 {
+    font-size: 25px;
+    letter-spacing: 7px;
+    margin: 180px 0 0;
+  }
+
+  .testimonials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .testimonials .profile-img {
+    width: 90px;
+    border-radius: 45px;
+    margin-top: 100px;
+  }
+  .testimonials h5 {
+    font-size: 23px;
+    margin-top: 100px;
+  }
+  .testimonials p {
+    line-height: 40px;
+  }
+  .testimonials .profession {
+    font-size: 18px;
+    padding: 0;
+  }
+  .testimonials .emily,
+.testimonials .thomas,
+.testimonials .jennie {
+    width: 25vw;
+    margin: 0 30px 100px;
+  }
+
+  .four-imgs {
+    margin: 100px 0 0;
+    display: flex;
+    object-fit: inherit;
+  }
+  .four-imgs img {
+    width: 25vw;
+  }
+  .four-imgs #milk-desktop,
+.four-imgs #orange-desktop,
+.four-imgs #cone-desktop,
+.four-imgs #sugar-desktop {
+    display: block;
+  }
+  .four-imgs #milk-mobile,
+.four-imgs #orange-mobile,
+.four-imgs #cone-mobile,
+.four-imgs #sugar-mobile {
+    display: none;
+  }
+
+  footer #green-logo {
+    width: 200px;
+    margin: 100px 0 50px;
+  }
+  footer .about {
+    display: flex;
+    justify-content: center;
+  }
+  footer .about p {
+    padding: 0px;
+    width: 140px;
+  }
+  footer .socials {
+    padding: 100px 600px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+  footer .socials img {
+    width: 25px;
   }
 }
 

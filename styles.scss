@@ -56,6 +56,7 @@ $white: hsl(0, 0%, 100%);
 
 html {
     width: 100vw;
+    overflow-x: hidden;
 }
 
 body {
@@ -190,6 +191,12 @@ h3 {
     margin: 40px 40px 60px;
 }
 
+.underline-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
 .underline {
     height: 2.5vw;
     opacity: 0.3;
@@ -291,19 +298,26 @@ h5 {
     grid-template-columns: 50vw 50vw;
     grid-template-rows: 50vw 50vw;
 
-    #milk {
+    #milk-desktop,
+    #orange-desktop,
+    #cone-desktop,
+    #sugar-desktop {
+        display: none;
+    }
+
+    #milk-mobile {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
     }
-    #orange {
+    #orange-mobile {
         grid-column: 2 / 3;
         grid-area: 1 / 2;
     }
-    #cone {
+    #cone-mobile {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
     }
-    #sugar {
+    #sugar-mobile {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
     }
@@ -352,12 +366,16 @@ footer {
     }
 }
 
-@media only screen and (min-width: 769px) {
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media only screen and (min-width: 1000px) {
     .orange {
         width: 100vw;
         background-image: url(images/desktop/image-header.jpg);
-        padding: 40px;
+        padding: 2.5vw;
         height: 55.5vw;
+        box-sizing: border-box;
 
         .desktop-header {
             display: flex;
@@ -368,7 +386,7 @@ footer {
                 justify-content: space-between;
 
                 #sunnyside-logo {
-                    width: 180px;
+                    width: 13vw;
                 }
 
                 #menu-img {
@@ -388,7 +406,7 @@ footer {
                     padding: 0;
 
                     p {
-                        font-size: 16px;
+                        font-size: 1.5vw;
                         color: white;
                         margin: 10px;
                         padding: 0 13px;
@@ -396,10 +414,10 @@ footer {
                     }
 
                     .contact {
-                        font-size: 16px;
-                        padding: 18px 10px;
+                        font-size: 1.1vw;
+                        padding: 1.2vw 0.8vw;
                         margin: 10px;
-                        width: 130px;
+                        width: 8vw;
                         background-color: white;
                         border-radius: 28px;
                     }
@@ -408,20 +426,59 @@ footer {
         }
 
         h1 {
-            font-size: 50px;
+            font-size: 4vw;
             margin-bottom: 5vw;
         }
     }
     .menu:after {
         display: none;
     }
+    
+    //GRID PART///////////////////////////////////////////////////////////////////
+    
+    h2 {
+        font-size: 3vw;
+        padding: 0;
+    }
 
     .transform {
         display: flex;
         flex-direction: row-reverse;
 
-
         .transform-text {
+            box-sizing: border-box;
+            width: 50vw;
+
+            text-align: left;
+            padding: 10vw 5.5vw 5vw 10vw;
+
+            h2 {
+                padding-right: 20px;
+            }
+
+            p {
+                font-size: 22px;
+                line-height: 38px;
+                padding: 30px 0 0 0;
+            }
+        }
+
+        #egg {
+            width: 50vw;
+        }
+    }
+
+    .stand-out {
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: row;
+
+        #stand-out {
+            width: 50vw;
+        }
+
+        .stand-out-text {
             box-sizing: border-box;
             width: 50vw;
 
@@ -429,54 +486,49 @@ footer {
             grid-row: 1/2;
 
             text-align: left;
-            padding: 70px 150px 100px 200px;
-
-            h2 {
-                padding-right: 20px;
+            padding: 10vw 5.5vw 5vw 10vw;
+            p {
+                font-size: 22px;
+                line-height: 38px;
+                padding: 30px 0 0 0;
             }
         }
+    }
 
-        #egg {
-            grid-column: 2/3;
-            grid-row: 1/2;
+    .fruits {
+        display: flex;
+
+        .graphic-design {
+            overflow: hidden;
             width: 50vw;
+            height: inherit;
+
+            background-image: url(images/desktop/image-graphic-design.jpg);
+            background-size: 50vw;
+            background-repeat: no-repeat;
         }
-    }
 
-    .stand-out {
-        display: grid;
-
-        #stand-out {
-            grid-column: 1/2;
-            grid-row: 2/3;
+        .photography {
+            overflow: hidden;
             width: 50vw;
+            height: inherit;
+
+            background-image: url(images/desktop/image-photography.jpg);
+            background-size: 50vw;
+            background-repeat: no-repeat;
+        }
+        .smaller-h2 {
+            font-size: 37px;
+            padding: 27vw 0 0 0;
         }
 
-        .stand-out-text {
-            grid-column: 2/3;
-            grid-row: 2/3;
+        p {
+            font-size: 20px;
+            line-height: 33px;
+            padding: 2vw 13vw;
         }
     }
 
-    .graphic-design {
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
-
-    .photography {
-        grid-column: 2/3;
-        grid-row: 3/4;
-    }
-    h2 {
-        font-size: 50px;
-        padding: 0;
-    }
-
-    p {
-        font-size: 22px;
-        line-height: 38px;
-        padding: 30px 0 0 0;
-    }
 
     h3 {
         font-size: 19px;
@@ -491,5 +543,103 @@ footer {
         right: 7px;
         border: $yellow solid 1px;
         border-radius: 4px;
+    }
+
+    //TESTIMONIALS PART/////////////////////////////////////////////////////////
+
+    h4 {
+        font-size: 25px;
+        letter-spacing: 7px;
+        margin: 180px 0 0;
+    }
+
+    .testimonials {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .profile-img {
+            width: 90px;
+            border-radius: 45px;
+            margin-top: 100px;
+        }
+
+        h5 {
+            font-size: 23px;
+            margin-top: 100px;
+        }
+
+        p {
+            // margin: 30px 0 0 0;
+            line-height: 40px;
+            // color: $vdg-blue;
+        }
+
+        .profession {
+            font-size: 18px;
+            padding: 0;
+        }
+
+        .emily,
+        .thomas,
+        .jennie {
+            width: 25vw;
+            margin: 0 30px 100px;
+        }
+    }
+
+    //FOUR IMAGES///////////////////////////////////////////////////////////
+
+    .four-imgs {
+        margin: 100px 0 0;
+        display: flex;
+        object-fit: inherit;
+
+        img {
+            width: 25vw;
+        }
+
+        #milk-desktop,
+        #orange-desktop,
+        #cone-desktop,
+        #sugar-desktop {
+            display: block;
+        }
+
+        #milk-mobile,
+        #orange-mobile,
+        #cone-mobile,
+        #sugar-mobile {
+            display: none;
+        }
+    }
+    //FOOTER////////////////////////////////////////////////////////////////
+    footer {
+        #green-logo {
+            width: 200px;
+            margin: 100px 0 50px;
+        }
+
+        .about {
+            display: flex;
+            justify-content: center;
+            // margin: 0 5vw 0;
+
+            p {
+                padding: 0px;
+                width: 140px;
+            }
+        }
+
+        .socials {
+            padding: 100px 600px;
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+
+            img {
+                width: 25px;
+            }
+        }
     }
 }
