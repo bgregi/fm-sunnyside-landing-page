@@ -203,7 +203,7 @@ h3 {
     width: 33vw;
     position: relative;
     bottom: 2vw;
-    border: $yellow solid 1px;
+    border: transparent solid 1px;
     border-radius: 1.25vw;
     z-index: -1;
 
@@ -421,6 +421,12 @@ footer {
                         background-color: white;
                         border-radius: 28px;
                     }
+
+                    .contact:hover {
+                        cursor: pointer;
+                        background-color: rgb(111, 207, 255);
+                        color: white;
+                    }
                 }
             }
         }
@@ -437,7 +443,7 @@ footer {
     //GRID PART///////////////////////////////////////////////////////////////////
     
     h2 {
-        font-size: 3vw;
+        font-size: 2.8vw;
         padding: 0;
     }
 
@@ -450,46 +456,44 @@ footer {
             width: 50vw;
 
             text-align: left;
-            padding: 10vw 5.5vw 5vw 10vw;
+            padding: 6vw 8vw 5vw 11vw;
 
             h2 {
                 padding-right: 20px;
             }
 
             p {
-                font-size: 22px;
-                line-height: 38px;
+                font-size: 1.25vw;
+                line-height: 2vw;
                 padding: 30px 0 0 0;
             }
         }
-
+        
         #egg {
             width: 50vw;
         }
     }
-
+    
     .stand-out {
         box-sizing: border-box;
-
+        
         display: flex;
         flex-direction: row;
-
+        
         #stand-out {
             width: 50vw;
         }
-
+        
         .stand-out-text {
             box-sizing: border-box;
             width: 50vw;
-
-            grid-column: 1/2;
-            grid-row: 1/2;
-
+            
             text-align: left;
-            padding: 10vw 5.5vw 5vw 10vw;
+            padding: 6vw 8vw 5vw 11vw;
+
             p {
-                font-size: 22px;
-                line-height: 38px;
+                font-size: 1.25vw;
+                line-height: 2vw;
                 padding: 30px 0 0 0;
             }
         }
@@ -501,56 +505,61 @@ footer {
         .graphic-design {
             overflow: hidden;
             width: 50vw;
-            height: inherit;
+            height: 40vw;
 
             background-image: url(images/desktop/image-graphic-design.jpg);
-            background-size: 50vw;
             background-repeat: no-repeat;
         }
 
         .photography {
             overflow: hidden;
             width: 50vw;
-            height: inherit;
+            height: 40vw;
 
             background-image: url(images/desktop/image-photography.jpg);
-            background-size: 50vw;
             background-repeat: no-repeat;
         }
         .smaller-h2 {
-            font-size: 37px;
+            font-size: 1.9vw;
             padding: 27vw 0 0 0;
         }
 
         p {
-            font-size: 20px;
-            line-height: 33px;
+            font-size: 1.1vw;
+            line-height: 1.8vw;
             padding: 2vw 13vw;
         }
     }
 
 
     h3 {
-        font-size: 19px;
-        letter-spacing: 2px;
-        margin: 50px 0 0 10px;
+        font-size: 1.1vw;
+        letter-spacing: 0.1vw;
+        margin: 2.5vw 0 0 1vw;
+    }
+
+    h3:hover {
+        cursor: pointer;
+
+        .underline {
+            opacity: 1;
+        }
     }
 
     .underline {
-        height: 8px;
-        width: 150px;
-        bottom: 8px;
-        right: 7px;
-        border: $yellow solid 1px;
-        border-radius: 4px;
+        height: .7vw;
+        width: 10vw;
+        bottom: .5vw;
+        right: 10.7vw;
+        border-radius: .35vw;
     }
 
     //TESTIMONIALS PART/////////////////////////////////////////////////////////
 
     h4 {
-        font-size: 25px;
-        letter-spacing: 7px;
-        margin: 180px 0 0;
+        font-size: 1.4vw;
+        letter-spacing: .5vw;
+        margin: 10vw 0 0;
     }
 
     .testimonials {
@@ -558,25 +567,26 @@ footer {
         flex-direction: row;
         justify-content: center;
 
+
         .profile-img {
-            width: 90px;
-            border-radius: 45px;
-            margin-top: 100px;
+            width: 5vw;
+            border-radius: 2.5vw;
+            margin-top: 6vw;
         }
 
         h5 {
-            font-size: 23px;
-            margin-top: 100px;
+            font-size: 1.3vw;
+            margin-top: 6vw;
         }
 
         p {
-            // margin: 30px 0 0 0;
-            line-height: 40px;
-            // color: $vdg-blue;
+            font-size: 1.2vw;
+            line-height: 2.2vw;
+            padding: 0 1vw;
         }
 
         .profession {
-            font-size: 18px;
+            font-size: 1vw;
             padding: 0;
         }
 
@@ -584,14 +594,14 @@ footer {
         .thomas,
         .jennie {
             width: 25vw;
-            margin: 0 30px 100px;
+            margin: 0 0 100px;
         }
     }
 
     //FOUR IMAGES///////////////////////////////////////////////////////////
 
     .four-imgs {
-        margin: 100px 0 0;
+        margin: 4vw 0 0;
         display: flex;
         object-fit: inherit;
 
@@ -616,8 +626,8 @@ footer {
     //FOOTER////////////////////////////////////////////////////////////////
     footer {
         #green-logo {
-            width: 200px;
-            margin: 100px 0 50px;
+            width: 12vw;
+            margin: 5vw 0 4vw;
         }
 
         .about {
@@ -627,18 +637,29 @@ footer {
 
             p {
                 padding: 0px;
-                width: 140px;
+                width: 9vw;
+                font-size: 1.5vw;
+                line-height: unset;
+            }
+
+            p:hover {
+                cursor: pointer;
+                color: white;
             }
         }
 
         .socials {
-            padding: 100px 600px;
+            padding: 6vw 42vw;
             display: flex;
             justify-content: space-between;
             box-sizing: border-box;
 
             img {
-                width: 25px;
+                width: 1.5vw;
+            }
+
+            img:hover {
+                cursor: pointer;
             }
         }
     }
