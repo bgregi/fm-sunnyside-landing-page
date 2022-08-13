@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/bgregi/sunnyside-landing-page](https://github.com/bgregi/sunnyside-landing-page)
-- Live Site URL: [https://bgregi.github.io/sunnyside-landing-page/](https://bgregi.github.io/sunnyside-landing-page/)
+- Solution URL: [https://github.com/bgregi/fm-sunnyside-landing-page](https://github.com/bgregi/fm-sunnyside-landing-page)
+- Live Site URL: [https://bgregi.github.io/fm-sunnyside-landing-page/](https://bgregi.github.io/fm-sunnyside-landing-page/)
 
 ## My process
 
